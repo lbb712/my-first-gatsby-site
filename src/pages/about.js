@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <p>Hi there! I'm Lily, the proud creator of this site, which I built with Gatsby.</p>
+      <p>Hi there! I'm Lilian, the proud creator of this site, which I built during week 1 of my internship with E Acad using Gatsby.</p>
       <StaticImage
         alt="Close up picture of Lily, the author of this webpage. She has long red/brown hair and is wearing glasses. "
         src="../images/lily.jpg"
