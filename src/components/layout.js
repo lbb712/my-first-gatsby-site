@@ -42,7 +42,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           <li className={navLinkItem}>
             <Link to="/test" className={navLinkText}>
-              New page
+              Comments
             </Link>
           </li>
         </ul>

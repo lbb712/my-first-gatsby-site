@@ -4,8 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const NewPage = () => {
   return (
-    <Layout pageTitle="New Page">
+    <Layout pageTitle="Comments">
       <p>Hi Lilian😀 Hope you are fine!</p>
+      <p>Hi Vedant, yes I'm great thank you! 😁</p>
       <StaticImage
         alt="Smiley face image"
         src="../images/smiley.jpg"
