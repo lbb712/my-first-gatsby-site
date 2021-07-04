@@ -1,26 +1,88 @@
 .container {
-    margin: auto;
-    max-width: 500px;
     font-family: sans-serif;
+    background-color: rgb(150, 217, 240);
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
 
   .heading {
     color: rebeccapurple;
+    text-align: center;
   }
   .nav-links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+  }
+  .header {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(37, 58, 88);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     list-style: none;
-    padding-left: 0;
   }
+
+  .footer{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(37, 58, 88);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+   
+  li a {
+    float:left;
+    color: rgb(180, 220, 233);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+  
   .nav-link-item {
     padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: center;
   }
   .nav-link-text {
-    color: black;
+    color: rgb(180, 220, 233);
+    float:left;
   }
 
   .site-title {
     font-size: 3rem;
     color: gray;
     font-weight: 700;
+    text-align: center;
+    padding: 100px, 50px, 100px, 50px;
   }
+
+  .img_display{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 50px 25px 50px;
+    max-height: 500px;
+    max-width: 200px;
+  }
+

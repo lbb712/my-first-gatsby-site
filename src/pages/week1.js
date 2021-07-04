@@ -2,6 +2,10 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import { 
+  img_display,
+} from '../components/layout.module.css'
+
 
 const BlogPage = ({ data }) => {
   return (
@@ -16,7 +20,7 @@ const BlogPage = ({ data }) => {
         ))
       }
       </ul>
-      <StaticImage
+      <StaticImage className={img_display}
       alt="Image of two cartoon construction workers wearing hard-hats. One is holding a sign saying coming soon. The other is sat between a traffic cone and a sign using a laptop. "
       src="../images/Under-Construction.jpg"
     />

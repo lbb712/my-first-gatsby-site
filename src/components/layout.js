@@ -5,7 +5,8 @@ import {
     heading,
     navLinks,
     navLinkItem,
-    navLinkText,
+    header,
+    footer,
     siteTitle,
 } from './layout.module.css'
 
@@ -19,36 +20,41 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `)
+
   return (
     <main className={container}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <p className={siteTitle}>{data.site.siteMetadata.title}</p>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/week1" className={navLinkText}>
-              Week 1
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/test" className={navLinkText}>
-              Comments
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <h1 className={heading}>{pageTitle}</h1>
-      {children}
+      <header className={header}>
+        <nav>
+          <ul>
+            <li className={navLinkItem} list-style="none" float="left">
+              <a href="/" className={navLinks}>
+                Home
+              </a>
+            </li>
+            <li className={navLinkItem} list-style="none" float="left">
+              <a href="/about" className={navLinks}>
+                About
+              </a>
+            </li>
+            <li className={navLinkItem} list-style="none" float="left">
+              <a href="/week1" className={navLinks}>
+                Week 1
+              </a>
+            </li>
+            <li className={navLinkItem} list-style="none" float="left">
+              <a href="/test" className={navLinks}>
+                Comments
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+        <p className={siteTitle}>{data.site.siteMetadata.title}</p>     
+        <h1 className={heading}>{pageTitle}</h1>
+        {children}
+      </body>
     </main>
   )
 }
